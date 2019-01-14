@@ -1,0 +1,13 @@
+<h1>My to do list</h1>
+<p>Hi </p> <%= name%>
+<ul>
+    <% todolist.forEach(function(todo) { %>
+        <li> <%= todo %></li>
+    <% }); %>
+    </ul>
+<form action="/todo/add" method = "post">
+    <h2>What should I do ?</h2>
+<input type="text" name = newtodo id ='todo'>
+<input type = "button" value="confirm"></button>
+</form>
+
